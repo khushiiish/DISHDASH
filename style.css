@@ -230,10 +230,10 @@ h3{
     );
 }
 h4{
-    font:1.8rem;
+    font-size:1.8rem;
     color:var(--lead);
 }
-.order-card.price{
+.order-card .price{
     font-size:1.7rem;
     color:var(--gold-finger);
     padding:1.3rem 0 2rem 0; 
@@ -437,7 +437,7 @@ input[type="email"]:focus{
 .footer-link{
     color:gray;
     font-size:1.1rem;
-    tarnsition:0.3s ease-in-out;
+    transition:0.3s ease-in-out;
 }
 .footer-link:hover{
     color:var(--lead);
