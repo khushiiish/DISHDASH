@@ -238,6 +238,100 @@ h4{
     color:var(--gold-finger);
     padding:1.3rem 0 2rem 0; 
 }
+/* CAART TAB STYLING */
+.cart-tab{
+    background: var(--hint-yellow);
+    position:fixed;
+    inset:0 -500px  0 auto;
+    width:25rem;
+    padding-block:2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    z-index:99;
+    box-shadow:
+    rgb(79, 74, 74) -10px -10px 20px;
+    transition:.3s ease-in-out;
+    
+}
+.cart-tab-active{
+    inset:0 0 0 auto;
+}
+.cart-list{
+flex:1;
+width:100%;
+margin-top:1.5rem;
+overflow:auto;
+}
+.cart-list::-webkit-scrollbar{
+    width:0;
+}
+.total-container{
+width:100%;
+background: var(--gold-finger);
+text-align:center;
+margin-block:1rem;
+padding-block: 1rem;
+}
+.total-container h4{
+    display:inline-block;
+    font-size:1.3rem;
+    font-weight: 400;
+}
+.btn-container .btn{
+background:var(--lead);
+transition:.3s ease-in-out;
+}
+.btn-container .btn:hover{
+    background:var(--gold-finger) ;
+    color:var(--lead);
+}
+.item{
+    display:flex;
+    align-items:center;
+    
+gap:1rem;
+padding:.7rem 1rem;
+transition:all .5s ease-in-out;
+}
+.item.slide-out{
+    transform:translateX(50%);
+}
+.cart-list .item:nth-child(even){
+    background:var(--eye-ball)
+}
+.item .detail{
+    flex:2;
+}
+.item .item-image img{
+    width:5rem;
+}
+.item h4{
+    font-size:1.3rem;
+    color:var(--lead);
+} 
+.item .item-total{
+    font-weight:400;
+    margin-top:.3rem;
+}
+.quantity-btn{
+    background:var(--lead);
+    color:var(--pure-white);
+    width:1.7rem;
+    aspect-ratio:1;
+    border-radius:100vw;
+    text-align:center;
+    line-height:1.7rem;
+
+}
+.quantity-value{
+    font-size:1.2rem;
+    font-weight:400;
+    margin-inline:.6rem;
+}
+
+
 /* SECTION 03 */
 .review-container{
     width:650px;
@@ -321,9 +415,17 @@ input[type="email"]:focus{
     padding-block:4rem;
     background:var(--hint-yellow);
 }
+.footer-container .flex{
+    align-items:flex-start;
+}
 .footer-wrapper{
     flex:1;
+    flex-basis:150px;
 
+}
+.footer-wrapper:nth-child(1){
+    flex:2;
+    flex-basis:300px;
 }
 .footer-wrapper .social-icon{
     background: var(--pure-white);
@@ -331,6 +433,14 @@ input[type="email"]:focus{
 .footer-wrapper .social-icon:hover{
     background: var(--lead);
     color:var(--pure-white);
+}
+.footer-link{
+    color:gray;
+    font-size:1.1rem;
+    tarnsition:0.3s ease-in-out;
+}
+.footer-link:hover{
+    color:var(--lead);
 }
 
 
